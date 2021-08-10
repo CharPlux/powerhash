@@ -55,3 +55,4 @@ dependencies = [
 [[package]]
 name = "backtrace-sys"
 version = "0.1.28"
+source = "registry+https://github.com/rust-lang/crates.io-index"
