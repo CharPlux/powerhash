@@ -65,3 +65,7 @@ dependencies = [
 name = "bitflags"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "blake-hash"
+version = "0.2.0"
