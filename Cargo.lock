@@ -69,3 +69,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "blake-hash"
 version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "block-buffer 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
