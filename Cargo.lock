@@ -82,3 +82,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "block-padding 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "byte-tools 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "byteorder 1.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "generic-array 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
