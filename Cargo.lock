@@ -169,3 +169,5 @@ dependencies = [
 ]
 
 [[package]]
+name = "env_logger"
+version = "0.6.0"
