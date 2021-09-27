@@ -207,3 +207,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "typenum 1.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "groestl-aesni"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
