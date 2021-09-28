@@ -212,3 +212,4 @@ dependencies = [
 name = "groestl-aesni"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
