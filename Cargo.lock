@@ -226,3 +226,10 @@ dependencies = [
  "hex-literal-impl 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro-hack 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "hex-literal-impl"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "proc-macro-hack 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
