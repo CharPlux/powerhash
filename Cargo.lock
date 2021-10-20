@@ -396,3 +396,5 @@ dependencies = [
 [[package]]
 name = "regex-syntax"
 version = "0.6.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
