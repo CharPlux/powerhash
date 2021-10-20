@@ -394,3 +394,5 @@ dependencies = [
 ]
 
 [[package]]
+name = "regex-syntax"
+version = "0.6.5"
