@@ -418,3 +418,5 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "serde_derive"
+version = "1.0.85"
+source = "registry+https://github.com/rust-lang/crates.io-index"
