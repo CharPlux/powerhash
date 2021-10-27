@@ -435,3 +435,8 @@ dependencies = [
  "ryu 0.2.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.85 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "sha3"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
