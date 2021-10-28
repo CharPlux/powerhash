@@ -453,3 +453,5 @@ name = "skein-hash"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
+ "block-buffer 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "block-padding 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
