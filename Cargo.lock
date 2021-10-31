@@ -477,3 +477,5 @@ dependencies = [
 [[package]]
 name = "synstructure"
 version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
