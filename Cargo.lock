@@ -558,3 +558,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "vec_map"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "winapi"
+version = "0.2.8"
