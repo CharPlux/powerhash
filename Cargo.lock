@@ -607,3 +607,5 @@ dependencies = [
 
 [[package]]
 name = "yellowsun"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
