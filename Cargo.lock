@@ -615,3 +615,5 @@ dependencies = [
  "jh-x86_64 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "keccak 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.48 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sha3 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "skein-hash 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
