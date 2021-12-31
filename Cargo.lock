@@ -648,3 +648,5 @@ dependencies = [
 "checksum hex-literal 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "ae0e5c30fb65e661a0e39860e37100dfbe4d39aff865e9357a6a4ed0b5bbf303"
 "checksum hex-literal-impl 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1d340b6514f232f6db1bd16db65302a5278a04fef9ce867cb932e7e5fa21130a"
 "checksum humantime 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3ca7e5f2e110db35f93b837c81797f3714500b81d517bf20c431b16d3ca4f114"
+"checksum itoa 0.4.3 (registry+https://github.com/rust-lang/crates.io-index)" = "1306f3464951f30e30d12373d31c79fbd52d236e5e896fd92f96ec7babbbe60b"
+"checksum jh-x86_64 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "a08e56fab70a5cf5808e4c9ba9d89dc414ed92e2ab7637ded634cf57a4b910c5"
