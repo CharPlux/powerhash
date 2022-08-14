@@ -13,4 +13,4 @@
 
 # Usage
 
-Edit t
+Edit the i
