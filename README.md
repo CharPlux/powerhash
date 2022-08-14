@@ -13,4 +13,4 @@
 
 # Usage
 
-Edit the i
+Edit the inc
