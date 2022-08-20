@@ -13,4 +13,4 @@
 
 # Usage
 
-Edit the included `exa
+Edit the included `example
