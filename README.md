@@ -13,4 +13,4 @@
 
 # Usage
 
-Edit the included `example-config.json` to s
+Edit the included `example-config.json` to suit 
