@@ -13,4 +13,4 @@
 
 # Usage
 
-Edit the included `example-config.json` to suit yo
+Edit the included `example-config.json` to suit your n
