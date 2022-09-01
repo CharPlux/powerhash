@@ -13,4 +13,4 @@
 
 # Usage
 
-Edit the included `example-config.json` to suit your needs (pool 
+Edit the included `example-config.json` to suit your needs (pool add
