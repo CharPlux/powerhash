@@ -13,4 +13,5 @@
 
 # Usage
 
-Edit the included `example-config.json` to suit your needs (pool address
+Edit the included `example-config.json` to suit your needs (pool address,
+nu
