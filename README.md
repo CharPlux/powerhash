@@ -21,3 +21,5 @@ number of threads, etc), then run:
 While the hasher is running, press Enter to get statistics.
 
 # What is it?
+
+This 
