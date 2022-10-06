@@ -22,4 +22,4 @@ While the hasher is running, press Enter to get statistics.
 
 # What is it?
 
-This is a s
+This is a simp
