@@ -22,4 +22,4 @@ While the hasher is running, press Enter to get statistics.
 
 # What is it?
 
-This is a simple CLI miner for modern x86 CPUs, powered b
+This is a simple CLI miner for modern x86 CPUs, powered by t
