@@ -25,4 +25,5 @@ While the hasher is running, press Enter to get statistics.
 This is a simple CLI miner for modern x86 CPUs, powered by the
 [yellowsun](https://github.com/kazcw/yellowsun) CryptoNight hash implementation
 and the [cn-stratum](https://github.com/kazcw/cn-stratum) pool client. It once
-hosted unusually fast Cn/Cnv1 core loops I wrote in assembly, but the curr
+hosted unusually fast Cn/Cnv1 core loops I wrote in assembly, but the current
+Cnv
