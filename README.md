@@ -28,4 +28,4 @@ and the [cn-stratum](https://github.com/kazcw/cn-stratum) pool client. It once
 hosted unusually fast Cn/Cnv1 core loops I wrote in assembly, but the current
 Cnv2 backend is pure Rust based on stdsimd intrinsics.
 
-# Suppor
+# Supported
