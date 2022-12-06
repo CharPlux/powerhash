@@ -30,4 +30,4 @@ Cnv2 backend is pure Rust based on stdsimd intrinsics.
 
 # Supported platforms
 
-If you'd like to use this on a platform that isn't Linux, all it need
+If you'd like to use this on a platform that isn't Linux, all it needs is
