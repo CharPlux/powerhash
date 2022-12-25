@@ -32,4 +32,4 @@ Cnv2 backend is pure Rust based on stdsimd intrinsics.
 
 If you'd like to use this on a platform that isn't Linux, all it needs is a
 hugepage mmap implementation for your weird choice of operating systems. PRs
-for the [yellowsun](https://github.com/kazcw/yellowsun) project are welcome
+for the [yellowsun](https://github.com/kazcw/yellowsun) project are welcome!
