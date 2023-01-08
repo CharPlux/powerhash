@@ -3,4 +3,4 @@
         "address": "pollux:3333",
         "login": "x.snowman",
         "pass": "x",
-        "keepalive_s"
+        "keepalive_s": 60
