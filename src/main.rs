@@ -10,3 +10,5 @@ use std::time::{Duration, Instant};
 
 use cn_stratum::client::{
     ErrorReply, Job, JobAssignment, MessageHandler, PoolClient, PoolClientWriter, RequestId,
+};
+use yellowsun::{Algo, AllocPolicy, Hasher};
