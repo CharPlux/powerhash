@@ -17,3 +17,9 @@ use byteorder::{ByteOrder, LE};
 use core_affinity::CoreId;
 use log::*;
 use serde_derive::{Deserialize, Serialize};
+
+const AGENT: &str = "pow#er/0.2.0";
+
+#[derive(Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct ClientConfig {
