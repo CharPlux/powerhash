@@ -12,3 +12,8 @@ use cn_stratum::client::{
     ErrorReply, Job, JobAssignment, MessageHandler, PoolClient, PoolClientWriter, RequestId,
 };
 use yellowsun::{Algo, AllocPolicy, Hasher};
+
+use byteorder::{ByteOrder, LE};
+use core_affinity::CoreId;
+use log::*;
+use serde_derive::{Deserialize, Serialize};
