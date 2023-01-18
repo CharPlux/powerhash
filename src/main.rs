@@ -28,3 +28,9 @@ pub struct ClientConfig {
     pub pass: String,
     pub keepalive_s: Option<u64>,
 }
+
+#[derive(Deserialize, Debug, Serialize)]
+#[serde(deny_unknown_fields)]
+struct Config {
+    pub pool: ClientConfig,
+    pub cores: Vec<u32>,
