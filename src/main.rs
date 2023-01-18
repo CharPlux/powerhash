@@ -25,3 +25,6 @@ const AGENT: &str = "pow#er/0.2.0";
 pub struct ClientConfig {
     pub address: String,
     pub login: String,
+    pub pass: String,
+    pub keepalive_s: Option<u64>,
+}
