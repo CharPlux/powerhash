@@ -34,3 +34,6 @@ pub struct ClientConfig {
 struct Config {
     pub pool: ClientConfig,
     pub cores: Vec<u32>,
+}
+
+fn main() {
