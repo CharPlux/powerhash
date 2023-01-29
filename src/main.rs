@@ -43,3 +43,5 @@ fn main() {
     std::panic::set_hook(Box::new(move |info| {
         eprintln!("panicked");
         panicker(info);
+        std::process::exit(1);
+    }));
