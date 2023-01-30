@@ -49,3 +49,8 @@ fn main() {
     let args = clap::App::new("Pow#er")
         .author("Kaz Wesley <kaz@lambdaverse.org>")
         .arg(
+            clap::Arg::with_name("config")
+                .short("c")
+                .long("config")
+                .value_name("FILE")
+                .help("Sets a custom config file")
