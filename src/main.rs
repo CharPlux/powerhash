@@ -45,3 +45,7 @@ fn main() {
         panicker(info);
         std::process::exit(1);
     }));
+
+    let args = clap::App::new("Pow#er")
+        .author("Kaz Wesley <kaz@lambdaverse.org>")
+        .arg(
