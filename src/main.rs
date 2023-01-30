@@ -54,3 +54,6 @@ fn main() {
                 .long("config")
                 .value_name("FILE")
                 .help("Sets a custom config file")
+                .required(true)
+                .takes_value(true),
+        ).arg(
