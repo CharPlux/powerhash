@@ -57,3 +57,6 @@ fn main() {
                 .required(true)
                 .takes_value(true),
         ).arg(
+            clap::Arg::with_name("allow-slow-mem")
+                .long("allow-slow-mem")
+                .help("Continue even if hugepages are not available (SLOW!)"),
