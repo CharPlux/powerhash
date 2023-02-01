@@ -64,3 +64,6 @@ fn main() {
 
     let cfg: Config = File::open(args.value_of("config").unwrap())
         .map(serde_json::from_reader)
+        .unwrap()
+        .unwrap();
+    debug!("config: {:?}", &cfg);
