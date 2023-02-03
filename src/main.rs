@@ -74,3 +74,7 @@ fn main() {
     } else {
         AllocPolicy::RequireFast
     };
+
+    let client = PoolClient::connect(
+        &cfg.pool.address,
+        &cfg.pool.login,
