@@ -83,3 +83,8 @@ fn main() {
         AGENT,
         Client::new,
     ).unwrap();
+    let work = client.handler().work();
+    let pool = client.write_handle();
+    thread::Builder::new()
+        .name("poolclient".into())
+        .spawn(move || client.run())
