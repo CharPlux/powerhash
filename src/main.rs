@@ -88,3 +88,8 @@ fn main() {
     thread::Builder::new()
         .name("poolclient".into())
         .spawn(move || client.run())
+        .unwrap();
+
+    let core_ids = core_affinity::get_core_ids().unwrap();
+    let worker_count = cfg.cores.len();
+    let mut workerstats = Vec::with_capacity(cfg.cores.len());
