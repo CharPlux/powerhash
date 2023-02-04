@@ -93,3 +93,9 @@ fn main() {
     let core_ids = core_affinity::get_core_ids().unwrap();
     let worker_count = cfg.cores.len();
     let mut workerstats = Vec::with_capacity(cfg.cores.len());
+    for (i, w) in cfg.cores.into_iter().enumerate() {
+        let hash_count = Arc::new(AtomicUsize::new(0));
+        workerstats.push(Arc::clone(&hash_count));
+        let core = core_ids[w as usize];
+        debug!("starting worker{} on core {:?}", i, w);
+        let worker = Worker {
