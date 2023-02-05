@@ -102,3 +102,6 @@ fn main() {
             hash_count,
             work: Arc::clone(&work),
             pool: Arc::clone(&pool),
+            core,
+            worker_id: i as u32,
+            step: worker_count as u32,
