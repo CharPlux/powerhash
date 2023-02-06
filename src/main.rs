@@ -105,3 +105,6 @@ fn main() {
             core,
             worker_id: i as u32,
             step: worker_count as u32,
+            alloc_policy,
+        };
+        thread::Builder::new()
