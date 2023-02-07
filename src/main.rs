@@ -108,3 +108,9 @@ fn main() {
             alloc_policy,
         };
         thread::Builder::new()
+            .name(format!("worker{}", i))
+            .spawn(move || worker.run())
+            .unwrap();
+    }
+
+    let mut prevstats: Vec<_> = workerstats
