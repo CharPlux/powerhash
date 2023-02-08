@@ -114,3 +114,10 @@ fn main() {
     }
 
     let mut prevstats: Vec<_> = workerstats
+        .iter()
+        .map(|w| w.load(Ordering::Relaxed))
+        .collect();
+    let start = Instant::now();
+    let mut prev_start = start;
+    let mut total_hashes = 0;
+    let stdin = std::io::stdin();
