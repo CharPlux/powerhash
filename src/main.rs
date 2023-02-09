@@ -127,3 +127,8 @@ fn main() {
         let now = Instant::now();
         let cur_dur = now - prev_start;
         let total_dur = now - start;
+        prev_start = now;
+        let mut cur_hashes = 0;
+        for (i, (prev, new)) in prevstats.iter_mut().zip(&workerstats).enumerate() {
+            let new = new.load(Ordering::Relaxed);
+            let cur = new - *prev;
