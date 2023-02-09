@@ -125,3 +125,5 @@ fn main() {
     loop {
         println!("worker stats (since last):");
         let now = Instant::now();
+        let cur_dur = now - prev_start;
+        let total_dur = now - start;
