@@ -137,3 +137,8 @@ fn main() {
             *prev = new;
         }
         total_hashes += cur_hashes;
+        println!(
+            "\ttotal (since last): {} H/s",
+            (cur_hashes as f32) / dur_to_f32(&cur_dur)
+        );
+        println!(
