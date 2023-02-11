@@ -142,3 +142,6 @@ fn main() {
             (cur_hashes as f32) / dur_to_f32(&cur_dur)
         );
         println!(
+            "\ttotal (all time): {} H/s",
+            (total_hashes as f32) / dur_to_f32(&total_dur)
+        );
