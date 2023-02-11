@@ -151,3 +151,6 @@ fn main() {
 
 fn dur_to_f32(dur: &Duration) -> f32 {
     ((dur.as_secs() as f32) + (dur.subsec_nanos() as f32) / 1_000_000_000.0)
+}
+
+pub struct Client {
