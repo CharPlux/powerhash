@@ -154,3 +154,7 @@ fn dur_to_f32(dur: &Duration) -> f32 {
 }
 
 pub struct Client {
+    work: Arc<Work>,
+}
+
+impl Client {
