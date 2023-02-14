@@ -176,3 +176,6 @@ impl MessageHandler for Client {
 
     fn error_reply(&mut self, _id: RequestId, error: ErrorReply) {
         warn!(
+            "received error: {:?}, assuming that indicates a stale share",
+            error
+        );
