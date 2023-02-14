@@ -158,3 +158,7 @@ pub struct Client {
 }
 
 impl Client {
+    fn new(job: Job) -> Self {
+        let work = Arc::new(Work::new(job));
+        Client { work }
+    }
