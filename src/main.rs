@@ -179,3 +179,10 @@ impl MessageHandler for Client {
             "received error: {:?}, assuming that indicates a stale share",
             error
         );
+    }
+
+    fn status_reply(&mut self, _id: RequestId, status: String) {
+        if status == "OK" {
+            debug!("received status OK");
+        } else {
+            info!("received status {:?}, assuming that means OK", status);
