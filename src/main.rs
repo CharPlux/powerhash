@@ -186,3 +186,10 @@ impl MessageHandler for Client {
             debug!("received status OK");
         } else {
             info!("received status {:?}, assuming that means OK", status);
+        }
+    }
+
+    fn job_reply(&mut self, _id: RequestId, _job: Box<JobAssignment>) {
+        warn!("unexpected job reply...");
+    }
+}
