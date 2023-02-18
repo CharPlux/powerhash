@@ -196,3 +196,5 @@ impl MessageHandler for Client {
 
 #[derive(PartialEq, Eq, Copy, Clone)]
 pub struct JobId(usize);
+pub struct Work {
+    job_id: AtomicUsize,
