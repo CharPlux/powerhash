@@ -227,3 +227,8 @@ struct Worker {
     pool: Arc<Mutex<PoolClientWriter>>,
     core: CoreId,
     worker_id: u32,
+    step: u32,
+    alloc_policy: AllocPolicy,
+}
+
+const DEFAULT_ALGO: Algo = Algo::Cn2;
