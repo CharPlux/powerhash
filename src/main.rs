@@ -209,3 +209,7 @@ impl Work {
     pub fn is_current(&self, jid: JobId) -> bool {
         jid == JobId(self.job_id.load(Ordering::Relaxed))
     }
+    pub fn current(&self) -> (JobId, Job) {
+        (
+            JobId(self.job_id.load(Ordering::Acquire)),
+            self.job.lock().unwrap().clone(),
