@@ -222,3 +222,8 @@ impl Work {
 }
 
 struct Worker {
+    hash_count: Arc<AtomicUsize>,
+    work: Arc<Work>,
+    pool: Arc<Mutex<PoolClientWriter>>,
+    core: CoreId,
+    worker_id: u32,
