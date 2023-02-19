@@ -198,3 +198,5 @@ impl MessageHandler for Client {
 pub struct JobId(usize);
 pub struct Work {
     job_id: AtomicUsize,
+    job: Mutex<Job>,
+}
