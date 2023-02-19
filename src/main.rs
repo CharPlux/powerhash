@@ -232,3 +232,9 @@ struct Worker {
 }
 
 const DEFAULT_ALGO: Algo = Algo::Cn2;
+
+impl Worker {
+    fn run(self) -> ! {
+        core_affinity::set_for_current(self.core);
+        let mut algo = DEFAULT_ALGO;
+        loop {
