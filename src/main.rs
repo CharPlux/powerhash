@@ -218,3 +218,7 @@ impl Work {
     pub fn set_current(&self, j: Job) {
         *self.job.lock().unwrap() = j;
         self.job_id.fetch_add(1, Ordering::Release);
+    }
+}
+
+struct Worker {
