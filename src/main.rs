@@ -238,3 +238,9 @@ impl Worker {
         core_affinity::set_for_current(self.core);
         let mut algo = DEFAULT_ALGO;
         loop {
+            let mut hasher = Hasher::new(algo, self.alloc_policy);
+            algo = loop {
+                trace!("getting work");
+                let (jid, job) = self.work.current();
+                let new_algo = job
+                    .algo()
