@@ -203,3 +203,9 @@ pub struct Work {
 impl Work {
     pub fn new(job: Job) -> Self {
         let job_id = AtomicUsize::new(0);
+        let job = Mutex::new(job);
+        Work { job_id, job }
+    }
+    pub fn is_current(&self, jid: JobId) -> bool {
+        jid == JobId(self.job_id.load(Ordering::Relaxed))
+    }
