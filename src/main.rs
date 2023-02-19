@@ -200,3 +200,6 @@ pub struct Work {
     job_id: AtomicUsize,
     job: Mutex<Job>,
 }
+impl Work {
+    pub fn new(job: Job) -> Self {
+        let job_id = AtomicUsize::new(0);
