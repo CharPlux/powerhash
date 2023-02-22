@@ -253,3 +253,7 @@ impl Worker {
                 trace!("same algo ({:?})", new_algo);
                 let start = (u32::from(job.blob()[42]) << 24) + self.worker_id;
                 let nonce_seq = (start..).step_by(self.step as usize);
+                let hashes = hasher.hashes(job.blob().into(), nonce_seq.clone());
+                for (h, n) in hashes.zip(nonce_seq.clone()) {
+                    if LE::read_u64(&h[24..]) <= job.target() {
+                        debug!("submitting share");
