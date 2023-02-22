@@ -249,3 +249,7 @@ impl Worker {
                 if new_algo != algo {
                     debug!("new algo: {:?}", new_algo);
                     break new_algo;
+                }
+                trace!("same algo ({:?})", new_algo);
+                let start = (u32::from(job.blob()[42]) << 24) + self.worker_id;
+                let nonce_seq = (start..).step_by(self.step as usize);
