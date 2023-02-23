@@ -257,3 +257,4 @@ impl Worker {
                 for (h, n) in hashes.zip(nonce_seq.clone()) {
                     if LE::read_u64(&h[24..]) <= job.target() {
                         debug!("submitting share");
+                        self.pool.lock().unwrap().submit(&job, n, &h).unwrap();
