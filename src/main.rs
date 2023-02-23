@@ -258,3 +258,9 @@ impl Worker {
                     if LE::read_u64(&h[24..]) <= job.target() {
                         debug!("submitting share");
                         self.pool.lock().unwrap().submit(&job, n, &h).unwrap();
+                    }
+                    self.hash_count.fetch_add(1, Ordering::Relaxed);
+                    if !self.work.is_current(jid) {
+                        trace!("work is outdated");
+                        break;
+                    }
