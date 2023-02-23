@@ -264,3 +264,8 @@ impl Worker {
                         trace!("work is outdated");
                         break;
                     }
+                }
+            }
+        }
+    }
+}
